@@ -1,0 +1,5 @@
+const arr = ['Tom', 'Ivan', 'Marussya', 'Ibrahim', 'Ko-dzhi', 'Donald', 'Hose']; 
+
+for (let i = 1; i < arr.length; i += 2) {
+  console.log(arr[i]);
+}
