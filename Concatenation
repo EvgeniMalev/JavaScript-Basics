@@ -1,0 +1,10 @@
+function concatenation() {
+    let word1 = 'This is';
+    let word2 = 'my';
+    let word3 = 'first';
+    let word4 = ' sentence';
+
+    console.log(word1 + " " + word2 + word3 + word4);
+}
+
+concatenation(); 
