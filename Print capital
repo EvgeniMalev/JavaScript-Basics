@@ -1,0 +1,9 @@
+function town() {
+    let country = 'Bulgaria';
+    let town = 'Sofia';
+    let postcode = 100;
+
+    console.log(`The capital of ${country} is ${town} with post code ${postcode}`);
+}
+
+town(); 
