@@ -1,0 +1,12 @@
+{
+    const a = 50;
+    const b = 100;
+    const c = 850;
+    const d = 60;
+    const e = 2;
+    const f = 3;
+    console.log(a + b);
+    console.log(c - d);
+    console.log(e * f);
+    console.log(d / f);
+}
