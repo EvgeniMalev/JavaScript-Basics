@@ -1,0 +1,12 @@
+function bgntorsd(bgnAmount) {
+
+  const exchangeRate = 59.97;
+  const rsdAmount = bgnAmount * exchangeRate;
+
+  return rsdAmount;
+}
+
+
+const bgnAmount = 100; 
+const rsdAmount = bgntorsd(bgnAmount);
+console.log(`${bgnAmount} BGN is equal to ${rsdAmount} RSD.`);
