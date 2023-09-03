@@ -1,0 +1,10 @@
+let word = "Toshiba";
+
+const wordArray = word.split("");
+
+wordArray[1] = "o"; // Replace the second letter with "o"
+wordArray[4] = "e"; 
+
+word = wordArray.join("");
+
+console.log(word);
