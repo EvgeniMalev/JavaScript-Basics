@@ -1,0 +1,30 @@
+
+function convertLengths(cm) {
+  const inches = cm / 2.54;
+  const yards = cm / 91.44;
+  const ft = cm / 30.48;
+  const ch = cm / 2011.68;
+
+  return {
+    inches: inches,
+    yards: yards,
+    feet: ft,
+    chains: ch
+  };
+}
+
+
+const centimetersInput = prompt("Enter the number of centimeters:");
+
+
+const centimeters = parseFloat(centimetersInput);
+
+if (!isNaN(centimeters)) {
+  const conversions = convertLengths(centimeters);
+  console.log(`${centimeters} cm is equal to ${conversions.inches.toFixed(2)} inches.`);
+  console.log(`${centimeters} cm is equal to ${conversions.yards.toFixed(2)} yards.`);
+  console.log(`${centimeters} cm is equal to ${conversions.feet.toFixed(2)} feet.`);
+  console.log(`${centimeters} cm is equal to ${conversions.chains.toFixed(2)} chains.`);
+} else {
+  console.log("Invalid input. Please enter a valid number of centimeters.");
+}
