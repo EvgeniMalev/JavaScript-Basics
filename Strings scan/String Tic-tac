@@ -1,0 +1,10 @@
+function word() {
+  let one = prompt("Enter symbols:");
+  let two = prompt("Enter symbols:");
+  
+  console.log(`${one} ${two} ${one}`);
+  console.log(`${two} ${one} ${two}`);
+  console.log(`${one} ${two} ${one}`);
+}
+
+word();
