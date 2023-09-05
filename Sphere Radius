@@ -1,0 +1,21 @@
+function calculateSphereVolume(radius) {
+  const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+  return volume;
+}
+
+const radiusInput = prompt("Enter radius: ");
+
+const radius = parseFloat(radiusInput);
+
+if (!isNaN(radius)) {
+  const volume = calculateSphereVolume(radius);
+  console.log(`The volume of a sphere with a radius of ${radius} is approximately ${volume.toFixed(2)}.`);
+} else {
+  console.log("Invalid input. Please enter a valid number for the radius.");
+}
+
+
+
+
+
+
