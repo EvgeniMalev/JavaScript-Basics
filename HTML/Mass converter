@@ -1,0 +1,57 @@
+Java Script code:
+        function MassConverter() {
+            let kg = document.getElementById("kg").value;
+            let lb = (kg * 2.2046).toFixed(4);
+            let ouz = (kg *35.27396).toFixed(4);
+            document.getElementById("lb").value = lb;
+            document.getElementById("ouz").value = ouz;
+        }
+
+
+
+The code into a html file:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MassConverter</title>
+</head>
+<body>
+  <font size="8"
+          face="italic"
+          color="#008000">
+          Mass Converter
+    </font>
+    <form class="content-form">
+        <h2 class="title"> </h2>
+        <section class="items">
+            <label for="kg" class="mass">
+                <span class="item-mass">Kilograms: </span>
+                <input class="mass-value" type="number" id="kg" value="0" />
+            </label>
+            <label for="lb" class="mass">
+                <span class="item-mass"> Pounds: </span>
+                <input class="mass-value" type="text" id="lb" readonly />
+            </label>
+            <label for="ouz" class="mass">
+                <span class="item-mass"> Ounces: </span>
+                <input class="mass-value" type="text" id="ouz" readonly />
+            </label>
+            <input class="primary-btn" type="button" value="Convert!" id="convertButton" />
+        </section>
+    </form>
+
+    <script>
+        function MassConverter() {
+            let kg = document.getElementById("kg").value;
+            let lb = (kg * 2.2046).toFixed(4);
+            let ouz = (kg *35.27396).toFixed(4);
+            document.getElementById("lb").value = lb;
+            document.getElementById("ouz").value = ouz;
+        }
+
+        document.getElementById("convertButton").addEventListener("click", MassConverter);
+    </script>
+</body>
+</html>
