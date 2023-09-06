@@ -1,0 +1,16 @@
+function isSafe(n) {
+    let EMField = parseFloat(n);
+	
+    if (EMField >= 80) {
+        console.log("Dangerous");
+    } else if (EMField >= 50 && EMField < 80) {
+        console.log("Not safe");
+    } else  {
+        console.log("Safe");    
+    }
+}
+
+// Example usage:
+isSafe(85);  // Output: "Dangerous"
+isSafe(65);  // Output: "Not safe"
+isSafe(40);  // Output: "Safe"
