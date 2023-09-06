@@ -1,0 +1,17 @@
+function calculateTilesforRoom() {
+    const RoomL = prompt("Enter the length of the room (in meters):");
+    const RoomW = prompt("Enter the width of the room (in meters):");
+
+    const roomArea = RoomL * RoomW;
+	
+	const TileL = prompt("Enter the length of the tile (in meters):");
+    const TileW = prompt("Enter the width of the tile (in meters):");
+
+    const TileArea = TileL * TileW;
+  
+    const numberOftiles= Math.floor(roomArea / TileArea);
+
+    console.log(`Number of workplaces in the classroom: ${numberOftiles}`);
+}
+
+calculateTilesforRoom();
