@@ -1,0 +1,15 @@
+function Gardenman() {
+
+    const kgvegetables = prompt("Enter vegetables(in kilograms):");
+    const kgfruits = prompt("Enter fruits(in kilograms)");
+    const pricevegetables = prompt("Enter the price of the vegetables:");
+    const pricefruits = prompt("Enter the price of the fruits)");
+	
+	const vegetables = kgvegetables * pricevegetables;
+	const fruits = kgfruits * pricefruits;
+	
+	const sum = vegetables + fruits;
+	
+	console.log(`The goods, that you buy from the gardenman cost: ${sum}`);
+}
+Gardenman();
