@@ -1,0 +1,28 @@
+function veggieshop(input) {
+    let voucher = Number(input[0]);
+    let toffuNumber = Number(input[1]);
+    let toffuPrice = Number(input[2]);
+    let hummusPiecesNumber = Number(input[3]);
+    let hummusPiecesPrice = Number(input[4]);
+    let vegetablesNumber = Number(input[5]);
+    let vegetablesPrice = Number(input[6]);
+    let fruitsNumber = Number(input[7]);
+    let fruitsPrice = Number(input[8]);
+
+    if (fruitsNumber >= 10) {
+        fruitsPrice *= 0.8;
+    }
+    if (vegetablesNumber >= 10) {
+        vegetablesPrice *= 0.75;
+    }
+    if (toffuNumber >= 3) {
+        toffuNumber += 1;
+    }
+
+    let totalArticles = toffuNumber + hummusPiecesNumber + vegetablesNumber + fruitsNumber;
+    let sum = toffuPrice + hummusPiecesPrice + vegetablesPrice + fruitsPrice;
+
+    let leftMoney = voucher - sum;
+
+    console.log(leftMoney);
+}
