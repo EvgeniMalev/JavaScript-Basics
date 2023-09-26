@@ -1,0 +1,9 @@
+function forsym(input) {
+  let constant = Number(input[0]);
+  
+  for (let start = constant; start <= 250; constant = constant + 2) {
+    console.log(constant);
+  }
+}
+
+forsym([52]);
