@@ -1,0 +1,16 @@
+function forLoop(input) {
+    let loopStart = Number(input[0]);
+    let loopEnd = Number(input[1]);
+    let sumOfNumbers = 0;
+
+    for (let current = loopStart; current <= loopEnd; current++) {
+        if (current % 2 === 0 && current % 3 === 0) {
+            console.log(current);
+            sumOfNumbers += current;
+        }
+    }
+
+    console.log(`The sum: ${sumOfNumbers}`);
+}
+
+forLoop(["100", "200"]);
