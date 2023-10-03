@@ -1,0 +1,38 @@
+function payday(input) {
+    let age = Number(input[0]);
+    let days = Number(input[1]);
+    let basemoney = Number(input[2]);
+    let holiday = Number(input[3]);
+
+    let moneySaved = 0;
+    let startmoney = 0;
+
+    if (age < 25) {
+        startmoney = basemoney * 0.5;
+    } else if (age <= 40 && age > 25) {
+        startmoney = basemoney * 0.6;
+    } else {
+        startmoney = basemoney * 0.8;
+    }
+
+    for (let i = 1; i <= days; i++) {
+        if (i % 2 === 0) {
+            startmoney += 20;
+        } else if (i % 3 === 0) {
+            startmoney += 25;
+        } else if (i % 5 === 0) {
+            startmoney += 35;
+        }
+    }
+
+    let finalmoney = startmoney - holiday;
+
+    let wifemoney = finalmoney * 0.35;
+    let childrenmoney = finalmoney * 0.15;
+
+    console.log(`Wife takes ${wifemoney.toFixed(2)} BGN`);
+    console.log(`Children take ${childrenmoney.toFixed(2)} BGN`);
+}
+
+
+payday(["35", "14","300","800"]);
