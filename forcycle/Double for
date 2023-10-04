@@ -1,0 +1,56 @@
+Task 1                                                 Outout
+=============================================          1
+                                                       1
+function Doublefor() {                                 2
+    for (let a = 1; a <= 2; a++) {                     2
+        for (let b = 1; b <= 2; b++) {
+            console.log(a);
+            
+        }
+    }
+}
+
+Doublefor(); 
+
+Task 2                                                Outout
+=============================================          1
+                                                       1
+function Doublefor() {                                 1
+    for (let a = 1; a <= 2; a++) {                     2
+        for (let b = 1; b <= 3; b++) {                 2
+            console.log(a);                            2
+            
+        }
+    }
+}
+
+Doublefor(); 
+
+Task 3                                                Outout
+=============================================          1
+                                                       2
+function Doublefor() {                                 3
+    for (let a = 1; a <= 2; a++) {                     1
+        for (let b = 1; b <= 3; b++) {                 2
+            console.log(b);                            3
+            
+        }
+    }
+}
+
+Doublefor(); 
+
+Task 4                                                Outout
+=============================================          1
+                                                       1
+function Doublefor() {                                 1
+    for (let a = 1; a <= 2; a++) {                     2
+        for (let b = 1; b <= 3; b++) {                 1
+            console.log(a);                            3
+            console.log(b);                            2
+                                                       1
+        }                                              2
+    }                                                  2
+}                                                      2
+                                                       3
+Doublefor(); 
