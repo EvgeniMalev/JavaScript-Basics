@@ -14,7 +14,33 @@ if (!isNaN(radius)) {
   console.log("Invalid input. Please enter a valid number for the radius.");
 }
 
+==================================================================
+                          Alternative
+==================================================================
 
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function calculateSphereVolume(radius) {
+  const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+  return volume;
+}
+
+rl.question("Enter radius: ", (radiusInput) => {
+  const radius = parseFloat(radiusInput);
+
+  if (!isNaN(radius)) {
+    const volume = calculateSphereVolume(radius);
+    console.log(`The volume of a sphere with a radius of ${radius} is approximately ${volume.toFixed(2)}.`);
+  } else {
+    console.log("Invalid input. Please enter a valid number for the radius.");
+  }
+
+  rl.close();
+});
 
 
 
