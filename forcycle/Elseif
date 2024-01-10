@@ -1,0 +1,17 @@
+function FactorySalary(salary) {
+    if (salary >= 1100) {
+        console.log("Director");
+    } else if (salary >= 800 && salary < 1100) {
+        console.log("Head of factory");
+    } else if (salary >= 600 && salary < 800) {
+        console.log("Main engineer");
+    } else if (salary >= 500 && salary < 600) {
+        console.log("engineer");    
+    } else {
+        console.log("Worker");
+    }
+}
+
+
+const userInput =700; 
+FactorySalary(userInput);
