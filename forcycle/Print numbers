@@ -1,0 +1,11 @@
+function printNumbers() {
+    for (let a = 50; a < 200; a++) {
+        console.log(a);
+    }
+    for (let b = 350; b > 200; b--) {
+        console.log(b);
+    }
+}
+
+// Call the function
+printNumbers();
