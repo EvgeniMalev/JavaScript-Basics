@@ -1,0 +1,31 @@
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Enter the value of word: ', (input) => {
+  string word = parseFloat(input); 
+
+  switch (true) {
+    case (word = 'R%'):
+      console.log('The word is on League A');
+      break;
+    case (word = 'S%'):
+      console.log('The word is on League B');
+      break;
+    case (word = 'C%'):
+      console.log('The word is on League C');
+      break;
+    case (word = 'W%'):
+      console.log('The word is on League D');
+      break;
+    default:
+      console.log('The word is on League E');
+      break;
+  }
+
+  rl.close();
+});
