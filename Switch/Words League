@@ -1,4 +1,3 @@
-
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -7,19 +6,19 @@ const rl = readline.createInterface({
 });
 
 rl.question('Enter the value of word: ', (input) => {
-  string word = parseFloat(input); 
+  const word = input.trim(); // Remove leading and trailing whitespaces
 
-  switch (true) {
-    case (word = 'R%'):
+  switch (word) {
+    case 'R%':
       console.log('The word is on League A');
       break;
-    case (word = 'S%'):
+    case 'S%':
       console.log('The word is on League B');
       break;
-    case (word = 'C%'):
+    case 'C%':
       console.log('The word is on League C');
       break;
-    case (word = 'W%'):
+    case 'W%':
       console.log('The word is on League D');
       break;
     default:
