@@ -1,0 +1,35 @@
+/** JavaScript switch case of amount of construction materials*/.
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Enter the value of a: ', (input) => {
+  const a = parseFloat(input); 
+
+  switch (true) {
+    case (a < 3.00):
+      console.log('The materials are not enough');
+      break;
+    case (a >= 3.00 && a < 6.50):
+      console.log('The materials are enough for one room');
+      break;
+    case (a >= 6.50 && a < 9.80):
+      console.log('The materials are enough for two rooms');
+      break;
+    case (a >= 9.81 && a < 13.70):
+      console.log('The materials are enough for three rooms');
+      break;
+    case (a >= 13.75):
+      console.log('The materials are enough');
+      break;
+    default:
+      console.log("I don't know such values");
+      break;
+  }
+
+  rl.close();
+});
