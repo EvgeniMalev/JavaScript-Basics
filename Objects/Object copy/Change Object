@@ -1,0 +1,7 @@
+const car = {
+  automobile: "John"
+};
+
+car.automobile = "Autobianchi";
+
+alert(car.automobile);
